@@ -1,0 +1,106 @@
+% Auth: Nicklas Vraa
+% Docs: https://github.com/NicklasVraa/LiX
+
+\documentclass{textbook}
+
+\lang      {english}
+\title     {Quantum Cryptography}
+\subtitle  {(For the Layman)}
+\author    {Jaime Torres}
+\cover*    {resources/textbook_front.pdf}{resources/textbook_back.pdf}
+\license   {CC}{by-nc-sa}{3.0}
+\publisher {Nobody, just me!}
+\edition   {1}{2024}
+\keywords  {optimization, simulation, python, mathematical modeling}
+
+\begin{document}
+
+\tableofcontents
+
+\chapter{Preliminaries}
+
+There are a few things we might need to have in mind before we start working properly in quantum cryptography.
+
+\section{Complex Numbers}
+
+A complex number is a numerical evaluation that has a part that is imaginary, and a part that is real.
+
+\subsection{Complex conjugate numbers}
+
+If $\alpha = a + ib$, then we can conjugate it as $\hat{\alpha} = a - ib$. This is interesting because if we multiply these
+numbers, we arrive to:
+
+\begin{gather}
+    a \cdot \hat{a} = a^2 - i^2 b^2 = a^2 + b^2
+\end{gather}
+
+this is equal to the square of the magnitude a complex number has in representing both the real and the complex space.
+
+\section{Euler's Identity}
+
+Say for example we let the function $f(\theta) = ( cos{\theta} + i \sin{\theta} ) e^{-i\theta}$
+where $\theta \in \mathbb{R}$
+
+we can assume then from derivating this expression:
+
+\begin{gather}
+    \frac{df(\theta)}{d\theta}
+\end{gather}
+
+This equation is a constant because of this derivative,
+and therefore we can calculate f(0) and it will equal the same for all real values.
+
+\begin{gather}
+    f(0) = ( cos{0} + i \sin{0} ) e^{-i * 0}
+\end{gather}
+
+$$ e^{i\pi} + 1 = 0$$
+
+This can also be proved through Taylor series or extend it to square matrices, however,
+as it stands right now, we just need to use it for working on imaginary numbers, so this is the
+result that happens to become relevant to us.
+
+\subsection{}
+
+\section{The Stern-Gerlach experiment}
+
+We can prove a few quantum properties through this experiment, and it will theoretically fundament a bunch of our calculations.
+So, given an iron magnet, and macroscopic parcticles,
+
+\chapter{Information in quantum systems.}
+
+Quantum information is, in essence, a multidisciplinary field somewhere in the middle
+of physics, mathematics, and computer science. While mostly a theoretical field at this point,
+but in essence, we can think on it as a way to solve problems unsolvable by current systems, that
+are based on the Von Neumann architecture. Of course, this is a pretty versatile architecture that
+can be used for a lot of stuff, but it might have a few limitations we're slowly crawling towards.
+
+A lot of complex calculations are intractable for Von Neumann computers, as for example
+is the case for factorization, which ends up happening to give us modern classical cryptography. In that same vein,
+there are different natural problems with such systems.
+
+For example, Caffeine ( $C_{8}H_{10}N_{4}O_{2}$ ) is a 24 atom molecule, and it requires for those 24 atoms, $10^{48}$ bits
+for describing all possible energy arrangements. And yet, 160 qubits can represent the model on
+it's completeness, as a $2^{160} = 1.46 \cdot 10^{48}$ system in the complex space.
+
+For another application in chemistry, let's imagine a block of mineral Carbon (C), such material can be layered into
+layers to create graphite, or another form of such atoms, diamonds are also composed from carbon in molecules, and yet
+mineral Carbon  has wildly different properties. This are problems that don't have structural forms that can be fully simulated
+in classical computers. Materials Science will probably find a lot of uses for quantum information in the realms of simulation and
+data modeling. We'll probably end up needing better quantum computers, but the important thing is we'll find that such technologies will
+become incredibly useful.
+
+In layman's terms, quantum computers will:
+
+\begin{itemize}
+    \item Make it possible to represent unrepresentable information
+    \item Generate calculations at a much faster rate bit-to-qubit (we'll see what a qubit is later) per second
+    \item ...probably break some cryptographic systems, we'll also get to that.
+\end{itemize}
+
+\section{The Qubit}
+
+A qubit is a bit of a weird system, as it represents a quantum state somewhere between $\ket{0}$ and $\ket{1}$.
+As quantum computing tends to work, this is of a probabilistic variable, and won't be .
+
+\end{document}
