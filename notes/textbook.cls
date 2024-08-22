@@ -98,6 +98,8 @@
     justification=raggedright, singlelinecheck=false
 }
 
+\usepackage{braket}
+ 
 % LAYOUT: ----------------------------------------------------------------------
 \wrap{%
     \@ifundefined{theTitle}{}{%

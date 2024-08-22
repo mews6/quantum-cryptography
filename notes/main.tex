@@ -103,4 +103,57 @@ In layman's terms, quantum computers will:
 A qubit is a bit of a weird system, as it represents a quantum state somewhere between $\ket{0}$ and $\ket{1}$.
 As quantum computing tends to work, this is of a probabilistic variable, and won't be .
 
+\section{Measurements}
+
+In a lot of ways, quantum computers are inherently about measurements, Imperfect, unreliable and yet incredibly potent measurements.
+As it comes, quantum computers in essence depend on their measures 
+
+\section{Computational complexity}
+
+When we talk about algorithms, there exists a window 
+
+this has important applications for cryptography, because of the inherent limitations of classical computers, for example,
+the multiplication of two numbers can be solved in $O(n^2)$ steps, but given a number, finding out the factors will be $O(e^{n^{\frac{1}{3}}})$
+Therefore, the factors of a number are hard to calculate, but easy to verify. 
+
+In such systems, we can also talk about other problems with this same form of working, 
+
+
+%\begin{gather}
+%    \ket{\Phi} = \cmatrix{0\\0\\0\\0\\0\\1\\0}
+%\end{gather}
+
+\chapter{Classical problems done in Quantum ways}
+
+\section{The travelling salesman problem (TSP)}
+
+\chapter{Qiskit and Quantum Simulations}
+
+For most practical purposes, we'll use the tools provided by Qiskit for simulating quantum 
+systems. This is a tool developed by IBM to test quantum algorithms in classical computers,
+with the side effect of this tool being able to write circuits for actual quantum computers.
+as this document is being currently written, the cost of quantum compute is significantly higher
+than classical systems. Therefore, we'll be mostly simulating before we run in an actual quantum 
+computer.
+
+\section *{Quantum Operations}
+
+
+
+\section *{The circuit}
+
+To mantain our qubits, we'll represent the state of our program as a circuit.
+So for example, we could write the following expression:
+
+
+\code{my_code}{python}{
+    # Assuming qiskit already is installed
+    import qiskit
+    from qiskit import QuantumCircuit
+
+    qc0 = QuantumCircuit()
+    }
+    {Basic Quantum circuit declaration}
+
+
 \end{document}
