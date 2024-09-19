@@ -1,5 +1,6 @@
 qiskit
-ipynb
 matplotlib
 numpy
 qiskit-aer
+ipynb
+qiskit_textbook
